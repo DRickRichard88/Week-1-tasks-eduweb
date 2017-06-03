@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 2</title>
+</head>
+<body>
+	-wszystkie elementy  div>, posiadające zarówno klasę “grid” oraz klasę “grid-12”.
+	<br>
+	<h3>odp: $('div .grid .grid-12') </h3>
+	<hr>
+	-wszystkie elementy a>, których atrybut “href" zaczyna się na “http”, znajdujące się w elemencie o klasie “nav”
+	<br>
+	<h3>odp: $('nav a[href^="http"]')</h3>
+	<hr>
+	-wszystkie elementy input, których typ to “radio” lub “checkbox” oraz dodatkowo nie są aktualnie zaznaczone (checked).
+	<br>
+	<h3>odp:$(':checkbox:checked type:radio:checked')</h3>
+	<hr>
+	-wyłącznie pierwszy element p>, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie div> z identyfikatorem “text”
+	<br>
+	<h3>odp: var find = #text.find('p').filter(function(i, e) {<br>
+		return $(e).text().length = 0;<br>
+		});
+		
+	</h3> 
+	<hr>
+	-wszystkie elementy z klasą “pagination-item”, które nie są elementem span>
+	<br>
+	<h3>odp: $('.pagination-item:not("span")')</h3>
+	<hr>
+</body>
+</html>
